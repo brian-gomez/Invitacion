@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una Invitación Especial</title>
+  <link rel="stylesheet" href="invitacion.css">
+</head>
+<body>
+  <audio id="musica" loop>
+    <source src="HUMBE - 1960.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+  
+  <script>
+    // Reproduce la música cuando el usuario hace clic en cualquier parte
+    document.addEventListener('click', () => {
+      const audio = document.getElementById('musica');
+      audio.play();
+    });
+  </script>
+  
+
+  <div class="fondo">
+    <div class="tarjeta">
+      <h1>Mi niña</h1>
+      <p>Me gustaria preguntarte si me me darias el honor y privilegio de pasar un día de picnic con este simple chico que esta perdidamente enamorado de ti,<br>
+      entre risas, abrazos y muchas sonrisas.<br><br>
+      Solo tú y yo, bajo el cielo, compartiendo momentos unicos y especiales.</p>
+      
+      <img src="adorno.png" class="img-adorno" alt="Adorno bonito" />
+
+      <div id="respuesta" class="oculto">¡Será un día muy especial!.</div>
+    </div>
+  </div>
+
+  <div class="corazones-container" id="corazonesContainer"></div>
+
+  <script src="invitacion.js"></script>
+</body>
+</html>
